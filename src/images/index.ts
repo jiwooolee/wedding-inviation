@@ -1,21 +1,30 @@
-import coverImage from "./cover.png"
-import image1 from "./image1.png"
-import image2 from "./image2.png"
-import image3 from "./image3.png"
-import image4 from "./image4.png"
-import image5 from "./image5.png"
-import image6 from "./image6.png"
-import image7 from "./image7.png"
-import image8 from "./image8.png"
-import image9 from "./image9.png"
-import image10 from "./image10.png"
-import image11 from "./image11.png"
-import image12 from "./image12.png"
+import coverImage from "./image (1).jpg"
+import image2 from "./image (2).jpg"
+import image3 from "./image (3).jpg"
+import image4 from "./image (4).jpg"
+import image5 from "./image (5).jpg"
+import image6 from "./image (6).jpg"
+import image7 from "./image (7).jpg"
+import image8 from "./image (8).jpg"
+import image9 from "./image (9).jpg"
+import image10 from "./image (10).jpg"
+import image11 from "./image (11).jpg"
+import image12 from "./image (12).jpg"
+import image13 from "./image (13).jpg"
+import image14 from "./image (14).jpg"
+import image15 from "./image (15).jpg"
+import image16 from "./image (16).jpg"
+import image17 from "./image (17).jpg"
+import image18 from "./image (18).jpg"
+import image19 from "./image (19).jpg"
+import image20 from "./image (20).jpg"
+import image21 from "./image (21).jpg"
+import image22 from "./image (22).jpg"
+import image23 from "./image (23).jpg"
 
 export const COVER_IMAGE = coverImage
 
 export const GALLERY_IMAGES = [
-  image1,
   image2,
   image3,
   image4,
@@ -27,4 +36,15 @@ export const GALLERY_IMAGES = [
   image10,
   image11,
   image12,
+  image13,
+  image14,
+  image15,
+  image16,
+  image17,
+  image18,
+  image19,
+  image20,
+  image21,
+  image22,
+  image23,
 ]
