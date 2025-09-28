@@ -1,7 +1,6 @@
 import { Cover } from "./component/cover"
 import { Location } from "./component/location"
 import "./App.scss"
-import { BGEffect } from "./component/bgEffect"
 import { Invitation } from "./component/invitation"
 import { Calendar } from "./component/calendar"
 import { Gallery } from "./component/gallery"
@@ -10,11 +9,12 @@ import { GuestBook } from "./component/guestbook"
 import { LazyDiv } from "./component/lazyDiv"
 import { ShareButton } from "./component/shareButton"
 import { STATIC_ONLY } from "./env"
+import { AudioPlayer } from "./component/audioPlayer"
 
 function App() {
   return (
     <div className="background">
-
+      <AudioPlayer />
       <div className="card-view">
         <LazyDiv className="card-group">
           {/* 표지 */}
