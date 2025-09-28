@@ -1,6 +1,8 @@
 import { Map } from "./map"
 import CarIcon from "../../icons/car-icon.svg?react"
 import BusIcon from "../../icons/bus-icon.svg?react"
+import SubwayIcon from "../../icons/subway-icon.svg?react"
+import ParkingIcon from "../../icons/parking-icon.svg?react"
 import { LazyDiv } from "../lazyDiv"
 import { LOCATION, LOCATION_ADDRESS } from "../../const"
 
@@ -18,35 +20,41 @@ export const Location = () => {
       <LazyDiv className="card location">
         <div className="location-info">
           <div className="transportation-icon-wrapper">
+            <SubwayIcon className="transportation-icon"/>
+          </div>
+          <div className="heading">지하철</div>
+          <div />
+          <div className="content">
+            <p style={{margin: 0}}>■ 1호선&7호선 가산디지털단지역</p>
+            5번 출구 나와서 약 20M 직진후 셔틀버스 탑승
+            <br />
+            <br />
+            <p style={{margin: 0}}>■ 2호선 구로디지털단지역</p>
+            4번 출구 나와서 약 100M 직진후 셔틀버스 탑승
+            <br/>
+            <br/>
+            셔틀버스는 15분 간격으로 순환 운행됩니다
+          </div>
+        </div>
+        <div className="location-info">
+          <div className="transportation-icon-wrapper">
             <BusIcon className="transportation-icon" />
           </div>
-          <div className="heading">대중교통</div>
+          <div className="heading">버스</div>
           <div />
           <div className="content">
-            * 지하철 이용시
+            <p style={{margin: 0}}>■ 디지털로 버스이용하는 경우 - 지선 : 5536, 5615</p>
+            G밸리보건지소, G하이시티, 에이스하이엔드에서 하차 / 한화비즈메카 사이 도로로 약 200m
             <br />
-            지하철 2호선 <b>낙성대역 4번출구</b> 나와서
             <br />
-            → 첫번째 골목 끼고 좌회전
-            <br />→ 마을버스 <b>관악 02번</b> 승차
-            <br />→ <b>서울대후문·연구공원 정류장</b> 하차
+            <p style={{margin: 0}}>■ 남부순환로의 버스이용하는 경우 - 간선 : 504, 643, 651 / 지선 5528, 5615, 5619, 5626</p>
+            지타워 건물 뒤편에서 진입하게 됨 - 정성요양병원별관을 끼고 우회전하여 골목길로 진입하여
+            지타워건물 뒤편 3층 도착 - 에스컬레이터 이용하여 2층으로 이동
             <br />
-            → 길 건너 간판 참고해 도보로 100m 이동
             <br />
-            검은색 피라미드 유리 건물입니다.
-          </div>
-          <div />
-          <div className="content">
-            * 버스 이용 시
-            <br />
-            - 간선(파랑): 461, 641
-            <br />
-            - 지선(초록): 5413, 5524, 5528
-            <br />
-            반드시 <b>낙성대입구</b> 하차
-            <br />→ 마을버스 <b>관악 02번</b> 이용
-            <br />
-            이하 위와 동일합니다.
+            <p style={{margin: 0}}>■ 마을버스 : 금천07 이용</p>
+            구로디지털역방향 - 지타워 , G밸리산업박물관(지타워)
+            에이스하이엔드타워2차방향 - 에이스하이엔드타워2차, G밸리산업박물관(지타워), 대륭8차
           </div>
         </div>
         <div className="location-info">
@@ -56,21 +64,23 @@ export const Location = () => {
           <div className="heading">자가용</div>
           <div />
           <div className="content">
-            네이버 지도, 카카오 네비, 티맵 등 이용
-            <br />
-            <b>서울대학교 연구공원 웨딩홀</b> 검색
-            <br />
-            - 주차 요금은 무료입니다.
-            <br />
-            (주차장 이용 시 웨딩홀과 바로 연결)
+            <p style={{margin: 0}}>네비게이션 검색 : 서울시 구로구 디지털로 26길 38
+              ( #구로지타워 , #지타워몰 , #지타워컨벤션, #넷마블신사옥 )</p>
+            <p>디지털로26길 도로 이용하여 지타워 진입 - Gate 1, Gate 2 만 진입가능</p>
           </div>
           <div />
-          <div className="content">
-            <b>
-              ※ 서울대학교 정, 후문을 통과할 경우 통행료가 발생하므로
-              유의바랍니다. 낙성대 방향으로 이용해주세요.
-            </b>
+        </div>
+        <div className="location-info">
+          <div className="transportation-icon-wrapper">
+            <ParkingIcon className="transportation-icon" />
           </div>
+          <div className="heading">주차</div>
+          <div />
+          <div className="content">
+            <p style={{margin: 0}}>단독주차 / 1400대 주차 가능</p>
+            <p>2시간 무료주차 (이후 10분당 700원)</p>
+          </div>
+          <div />
         </div>
       </LazyDiv>
     </>
