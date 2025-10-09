@@ -15,6 +15,7 @@ export const Information1 = () => {
           식사시간: 13시 30분 ~ 15시 30분
           <br />
           장소: 1층 연회장
+          <br />
         </div>
       </div>
     </>
@@ -54,7 +55,7 @@ export const Information2 = () => {
                           <div className="name">
                             <span className="relation">{relation}</span> {name}
                           </div>
-                          <div>{account}</div>
+                          <div style={{fontSize: '0.8rem'}}>{account}</div>
                         </div>
                         <Button
                           className="copy-button"
@@ -107,7 +108,7 @@ export const Information2 = () => {
                           <div className="name">
                             <span className="relation">{relation}</span> {name}
                           </div>
-                          <div>{account}</div>
+                          <div style={{fontSize: '0.8rem'}}>{account}</div>
                         </div>
                         <Button
                           className="copy-button"

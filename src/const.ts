@@ -10,7 +10,7 @@ dayjs.locale("ko")
 export { dayjs }
 
 export const WEDDING_DATE = dayjs.tz("2026-01-24 14:00", "Asia/Seoul")
-export const HOLIDAYS = [15]
+export const HOLIDAYS = [1]
 
 export const LOCATION = "지타워 컨벤션"
 export const LOCATION_ADDRESS = "서울 구로구 디지털로26길 38"
@@ -59,7 +59,7 @@ export const GROOM_INFO = [
     relation: "신랑",
     name: GROOM_FULLNAME,
     phone: "010-5433-1101",
-    account: "하나은행 00000000000000",
+    account: "하나은행 254-910459-66607",
   },
   {
     relation: "신랑 아버지",

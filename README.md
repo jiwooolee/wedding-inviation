@@ -2,15 +2,8 @@
 
 ## 원본 버전 | Original Version
 
-남주호 ❤️ 정지원 청첩장입니다.
 
-https://juhonamnam.github.io/wedding-invitation
-
-실제 저희 결혼식을 위해 직접 디자인한 청첩장이며, 결혼식이 끝난 현재 전화번호, 계좌번호 등의 개인정보를 제외한 상태입니다. 사진 또한 현재 AI 생성 사진으로 대체되었으나, 당시에는 저희의 실제 웨딩 사진이 사용되었습니다.
-
-## 개요
-
-React로 제작된 모던한 모바일 청첩장 웹사이트 템플릿입니다. 깔끔한 디자인을 특징으로 하며, 손쉽게 커스터마이징하여 자신만의 청첩장으로 만들 수 있습니다.
+https://jiwooolee.github.io/wedding-invitation
 
 ## 주요 기능
 
@@ -33,7 +26,7 @@ React로 제작된 모던한 모바일 청첩장 웹사이트 템플릿입니다
 1. 저장소 복제:
 
 ```bash
-git clone https://github.com/juhonamnam/wedding-invitation.git
+git clone https://github.com/jiwooolee/wedding-invitation.git
 cd wedding-invitation
 ```
 
@@ -59,7 +52,7 @@ cp .env.example .env
   - Kakao Developers에서 발급 가능 (JavaScript Key)
 - `VITE_SERVER_URL`
   - 방명록과 참석 의사 전달 등을 위한 서버의 URL
-  - 서버 소스코드: https://github.com/juhonamnam/wedding-invitation-server
+  - 서버 소스코드: https://github.com/jiwooolee/wedding-invitation-server
   - 설정하지 않을 경우 소스코드상에 고정된 방명록만 보여줍니다.
     - 결혼식 끝난 이후 archive 용으로 사용 가능합니다. 지금까지 올라왔던 모든 방명록을 `offlineGuestBook.json`에 소스코드로 저장하여 read only로 보관해보세요.
 - `VITE_STATIC_ONLY`
@@ -129,14 +122,3 @@ npm run build
 ```
 
 4. `build` 디렉토리의 내용을 호스팅 플랫폼에 배포
-
-## 📋 업데이트 내역
-
-### 2025.09.11 - v0.1.0
-
-- CRA에서 Vite로 마이그레이션
-- `yarn` 대신 `npm` 사용
-- `src/const.ts`의 상수가 적용되지 않던 부분 (ex. `index.html`, `manifest.json`) 개선
-- `STATIC_ONLY` 환경변수 설정을 통해 별도의 서버를 필요로 하는 기능을 비활성화 가능
-- [Hotfix] Github의 환경변수명에 `VITE_` 접두사가 붙지 않아 혼란이 있었던 문제 수정
-- [Hotfix] Naver Map API의 최신 업데이트 반영

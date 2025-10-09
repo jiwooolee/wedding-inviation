@@ -42,29 +42,31 @@ export const Calendar = () => {
   return (
     <LazyDiv className="card calendar">
       <h2 className="english">The Wedding Day</h2>
+      <div style={{fontSize: '0.9rem'}}>
+        {WEDDING_DATE.format("YYYY년 MMMM D일 dddd A h시")}
+      </div>
       <div className="break" />
-      {WEDDING_DATE.format("YYYY년 MMMM D일 dddd A h시")}
       <div className="calendar-wrapper">
         <div className="head holiday">
-          <span>Su</span>
+          <span>Sun</span>
         </div>
         <div className="head">
-          <span>Mo</span>
+          <span>Mon</span>
         </div>
         <div className="head">
-          <span>Tu</span>
+          <span>Tue</span>
         </div>
         <div className="head">
-          <span>We</span>
+          <span>Wed</span>
         </div>
         <div className="head">
-          <span>Th</span>
+          <span>Thu</span>
         </div>
         <div className="head">
-          <span>Fr</span>
+          <span>Fri</span>
         </div>
         <div className="head">
-          <span>Sa</span>
+          <span>Sat</span>
         </div>
         {Array.from({ length: firstDayOfWeek }).map((_, i) => (
           <div key={i} />
@@ -87,11 +89,8 @@ export const Calendar = () => {
           }
 
           return (
-            <div
-              key={i}
-              className={classes.length ? classes.join(" ") : undefined}
-            >
-              <span>{date}</span>
+            <div style={{fontSize: '0.9rem'}} key={i} className={classes.length ? classes.join(" ") : undefined}>
+              {isWeddingDate ? <span><b>{date}</b></span> : <span>{date}</span>}
               {isWeddingDate && <div className="heart" />}
             </div>
           )
@@ -115,7 +114,7 @@ export const Calendar = () => {
           <div className="count">{diffs.seconds}</div>
         </div>
         <div className="message">
-          {GROOM_FIRSTNAME} & {BRIDE_FIRSTNAME}의 결혼식이{" "}
+          {GROOM_FIRSTNAME} ♥ {BRIDE_FIRSTNAME}의 결혼식이{" "}
           {dayDiff > 0 ? (
             <>
               <span className="d-day">{dayDiff}</span>일 남았습니다.
